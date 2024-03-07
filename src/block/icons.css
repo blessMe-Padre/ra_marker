@@ -1,0 +1,14 @@
+.icons {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--black);
+}
+
+.icons--green {
+    background-color: var(--green);
+}
