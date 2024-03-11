@@ -1,0 +1,5 @@
+.contact__map {
+    background-image: url('../src/img/bg/map.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
