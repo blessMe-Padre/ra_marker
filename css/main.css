@@ -15,6 +15,17 @@
   gap: 10px;
 }
 
+.ra-button {
+  display: inline-block;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px 30px;
+  background: #1a9640;
+}
+
 .btn-close-menu {
   --color:  #262626;
   width: 36px;
@@ -874,6 +885,7 @@ button.swiper-pagination-bullet{
   align-items: center;
   justify-content: center;
   background-color: var(--black);
+  flex: 0 0 auto;
 }
 
 .icons--green {
@@ -1155,6 +1167,96 @@ button.swiper-pagination-bullet{
   border-radius: 30px;
   padding: 12px 37px 14px 37px;
   background: #1a9640;
+}
+
+.about {
+  padding: 70px 0;
+  min-height: 400px;
+  background-image: url('../src/img/bg/ra.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #e8f1eb;
+}
+
+.about__title {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 600;
+  font-size: clamp(2.125rem, 1.482rem + 3.214vw, 4.375rem);
+  color: #292e35;
+  margin-bottom: 30px;
+}
+
+.about__text {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #292e35;
+  max-width: 761px;
+  margin-bottom: 30px;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.about__item {
+  border-radius: 20px;
+  padding: 30px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about__item p {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #292e35;
+}
+
+.footer {
+  background: #f5f6f8;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer__list {
+  min-width: 150px;
+}
+
+.footer__list-columns {
+  -moz-column-count: 3;
+       column-count: 3;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.footer h3 {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #292e35;
+  margin-bottom: 30px;
+}
+
+.footer li {
+  margin-bottom: 20px;
+}
+
+.footer a {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #292e35;
 }
 
 /* Импорт TailWind */
@@ -1871,11 +1973,6 @@ body {
   padding-bottom: 3rem;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .py-20{
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -1979,17 +2076,6 @@ body {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.hover\:text-blue:hover{
-  --tw-text-opacity: 1;
-  color: rgb(129 184 249 / var(--tw-text-opacity));
-}
-
-@media (min-width: 768px){
-  .sm\:flex-row{
-    flex-direction: row;
-  }
 }
 
 @media (min-width: 1024px){

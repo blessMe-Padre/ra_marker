@@ -17,6 +17,8 @@
 @import './block/category.css';
 @import './block/title.css';
 @import './block/card.css';
+@import './block/about.css';
+@import './block/footer.css';
 
 
 /* Импорт TailWind */
