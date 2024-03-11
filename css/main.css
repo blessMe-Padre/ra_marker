@@ -51,7 +51,7 @@
 }
 
 @font-face {
-  font-family: 'GolosText-Bold';
+  font-family: 'Golos Text';
 
   src: url('../src/fonts/GolosText-Bold.ttf');
 
@@ -63,7 +63,7 @@
 }
 
 @font-face {
-  font-family: 'GolosText-Regular';
+  font-family: 'Golos Text';
 
   src: url('../src/fonts/GolosText-Regular.ttf');
 
@@ -75,7 +75,7 @@
 }
 
 @font-face {
-  font-family: 'Jost-Bold';
+  font-family: 'Jost';
 
   src: url('../src/fonts/Jost-Bold.ttf');
 
@@ -87,7 +87,7 @@
 }
 
 @font-face {
-  font-family: 'Jost-Medium';
+  font-family: 'Jost';
 
   src: url('../src/fonts/Jost-Medium.ttf');
 
@@ -1207,7 +1207,7 @@ button.swiper-pagination-bullet{
 }
 
 .title {
-  font-family: "FuturaPT-Book", sans-serif;
+  font-family: "Futura PT", sans-serif;
   font-weight: 600;
   font-size: clamp(1.5rem, 1.214rem + 1.429vw, 2.5rem);
   color: #292e35;
@@ -1800,7 +1800,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Futura PT", sans-serif;
   color: #292e35;
   font-weight: 400;
   background-color: #454242;
