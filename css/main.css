@@ -1154,10 +1154,7 @@ button.swiper-pagination-bullet{
   color: #1a9640;
 }
 
-.category-slide {
-}
-
-.category-slide li {
+.category-slide>div {
   padding: 30px 20px;
   min-width: 240px;
   border-radius: 10px;
@@ -1204,6 +1201,31 @@ button.swiper-pagination-bullet{
   top: 15px;
   left: 20px;
   transform: rotate(0);
+}
+
+.recommendation-slide {
+  min-height: 200px;
+  padding: 30px 20px;
+  min-width: 240px;
+  border-radius: 10px;
+  background: #fff4cf;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recommendation-slide p {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #202020;
+}
+
+.recommendation-slide span {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #baae83;
 }
 
 .title {
@@ -1316,6 +1338,26 @@ button.swiper-pagination-bullet{
   background-image: url('../src/img/bg/map.webp');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.breadcrumbs {
+  padding: 20px 0;
+  display: flex;
+  gap: 5px;
+}
+
+.breadcrumbs a {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #adb3c2;
+}
+
+.breadcrumbs span {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #292e35;
 }
 
 .footer {

@@ -1,6 +1,4 @@
-.category-slide {}
-
-.category-slide li {
+.category-slide>div {
     padding: 30px 20px;
     min-width: 240px;
 
@@ -48,4 +46,32 @@
     top: 15px;
     left: 20px;
     transform: rotate(0);
+}
+
+.recommendation-slide {
+    min-height: 200px;
+
+    padding: 30px 20px;
+    min-width: 240px;
+
+    border-radius: 10px;
+    background: #fff4cf;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recommendation-slide p {
+    font-family: "Futura PT", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #202020;
+}
+
+.recommendation-slide span {
+    font-family: "Futura PT", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #baae83;
 }

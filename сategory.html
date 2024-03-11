@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Все категории</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel=" stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container h-screen grid grid-rows-[auto_1fr_auto]">
+        <header style="background-color: black; color: aliceblue;">header</header>
+
+        <main>
+            <div class="breadcrumbs">
+                <a href="/">Главная</a>
+                <span>&bull;</span>
+                <span>Каталог</span>
+            </div>
+
+            <section class="recommendation relative">
+                <h2 class="title">Рекомендуем</h2>
+
+                <div class="w-0 min-w-[100%] relative">
+                    <div class="recommendation-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide category-slide recommendation-slide relative">
+                                <p>Новинки</p>
+                                <span>148 товаров</span>
+                                <img src="./src/img/catalog/all-images-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide category-slide recommendation-slide relative">
+                                <p>Популярные товары</p>
+                                <span>234 товара</span>
+                                <img src="./src/img/catalog/all-images-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide category-slide recommendation-slide relative">
+                                <p>Диетические продукты</p>
+                                <span>48 товаров</span>
+                                <img src="./src/img/catalog/all-images-3.png" alt="">
+                            </div>
+                            <div class="swiper-slide category-slide recommendation-slide relative">
+                                <p>Диетические продукты</p>
+                                <span>48 товаров</span>
+                                <img src="./src/img/catalog/all-images-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-button-prev--recommendation"></div>
+                    <div class="swiper-button-next swiper-button-next--recommendation"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer style="background-color: black; color: aliceblue;">footer</footer>
+    </div>
+
+    <div class="scroll-top">
+        <img src="./src/img/up-arrow.svg" alt="стрелка вверх">
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/baguettebox.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
