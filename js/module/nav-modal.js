@@ -17,4 +17,14 @@ export const initNavModal = () => {
             }
         });
     });
+
+
+    const catalogButton = document.querySelector('.catalog-button');
+    const catalogMenu = document.querySelector('.catalog-menu');
+
+    catalogButton.addEventListener('click', () => {
+        catalogMenu.classList.toggle('is-active');
+        catalogButton.classList.toggle('is-active');
+    });
+
 }

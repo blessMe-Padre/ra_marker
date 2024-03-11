@@ -13,6 +13,8 @@
 @import './block/icons.css';
 @import './block/link.css';
 @import './block/header.css';
+@import './block/hero.css';
+@import './block/category.css';
 
 
 /* Импорт TailWind */
@@ -49,8 +51,8 @@
     body {
         font-family: 'Roboto', sans-serif;
         color: #292e35;
-        background: linear-gradient(166deg, #FFF 5.27%, rgba(255, 255, 255, 0.00) 78.75%);
         font-weight: 400;
+        background-color: #454242;
     }
 }
 
@@ -84,22 +86,4 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-.important {
-    background-image: url('../src/img/pattern-3.png');
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-@media (max-width: 767px) {
-    .important {
-        background-image: none;
-    }
-}
-
-@media (max-width: 1023px) {
-    .hero-bg img {
-        display: none;
-    }
 }

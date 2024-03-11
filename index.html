@@ -62,12 +62,61 @@
 
             <div class="header__inner container">
                 <button class="catalog-button">
-                    <img src="./src/img/icons/catalog-button.svg" width="20" height="20" alt="">
+                    <img class="catalog-button-img-1" src="./src/img/icons/catalog-button.svg" width="20" height="20"
+                        alt="">
+                    <img class="catalog-button-img-2" src="./src/img/icons/catalog-x.svg" width="20" height="20" alt="">
                     <span>Каталог</span>
                 </button>
 
-                <ul>
-                    <li></li>
+                <ul class="catalog-menu">
+                    <li class="relative">
+                        <p>Овощи</p>
+                        <img src="./src/img/catalog/image-1.png" alt="">
+                    </li>
+                    <li class="relative">
+                        <p>Тайские фрукты</p>
+                        <img src="./src/img/catalog/image-2.png" alt="">
+                    </li>
+                    <li class="relative">
+                        <p>️Ягода</p>
+                        <img src="./src/img/catalog/image-3.png" alt="">
+                    </li>
+                    <li class="relative">
+                        <p>Овощи</p>
+                        <img src="./src/img/catalog/image-1.png" alt="">
+                    </li>
+                    <li class="relative">
+                        <p>Тайские фрукты</p>
+                        <img src="./src/img/catalog/image-2.png" alt="">
+                    </li>
+                    <li class="relative">
+                        <p>️Ягода</p>
+                        <img src="./src/img/catalog/image-3.png" alt="">
+                    </li>
+                    <li class="relative">
+                        <p>Овощи</p>
+                        <img src="./src/img/catalog/image-1.png" alt="">
+                    </li>
+                    <li class="relative">
+                        <p>Тайские фрукты</p>
+                        <img src="./src/img/catalog/image-2.png" alt="">
+                    </li>
+                    <li class="relative">
+                        <p>️Ягода</p>
+                        <img src="./src/img/catalog/image-3.png" alt="">
+                    </li>
+                    <li class="relative">
+                        <p>Овощи</p>
+                        <img src="./src/img/catalog/image-1.png" alt="">
+                    </li>
+                    <li class="relative">
+                        <p>Тайские фрукты</p>
+                        <img src="./src/img/catalog/image-2.png" alt="">
+                    </li>
+                    <li class="relative">
+                        <p>️Ягода</p>
+                        <img src="./src/img/catalog/image-3.png" alt="">
+                    </li>
                 </ul>
 
                 <form class="header__search" role="search" method="get" id="searchform" action="#">
@@ -105,60 +154,110 @@
                     <span>Любимые&nbsp;товары</span>
                 </a>
             </div>
-    </div>
 
-    <!-- мобильное меню -->
-    <div class="flex flex-col items-start justify-between pt-20 overflow-hidden md:hidden">
-        <img loading="lazy" class="absolute top-5 left-5" src="./src/img/logo.svg" width="195" height="55" alt="лого">
-        <div class="mobile-menu bg-green">
-            <ul class="flex flex-col pb-11 text-main-black pt-4">
-                <li class="px-4 mb-4"><a class="link" href="#" data-goto=".page-section-1">О магазине</a>
-                </li>
-                <li class="px-4 mb-4"><a class="link" href="#" data-goto=".page-section-2">Доставка и
-                        оплата</a>
-                </li>
-                <li class="px-4 mb-4"><a class="link" href="#" data-goto=".page-section-3">Отзывы</a>
-                </li>
-                <li class="px-4 mb-4"><a class="link" href="#" data-goto=".page-section-4">Контакты</a></li>
-            </ul>
+            <!-- мобильное меню -->
+            <div class="flex flex-col items-start justify-between pt-20 overflow-hidden md:hidden">
+                <img loading="lazy" class="absolute top-5 left-5" src="./src/img/logo.svg" width="195" height="55"
+                    alt="лого">
+                <div class="mobile-menu bg-green">
+                    <ul class="flex flex-col pb-11 text-main-black pt-4">
+                        <li class="px-4 mb-4"><a class="link" href="#" data-goto=".page-section-1">О магазине</a>
+                        </li>
+                        <li class="px-4 mb-4"><a class="link" href="#" data-goto=".page-section-2">Доставка и
+                                оплата</a>
+                        </li>
+                        <li class="px-4 mb-4"><a class="link" href="#" data-goto=".page-section-3">Отзывы</a>
+                        </li>
+                        <li class="px-4 mb-4"><a class="link" href="#" data-goto=".page-section-4">Контакты</a></li>
+                    </ul>
 
-            <div class="flex gap-5 pl-4">
-                <a href="https://wa.me/79147040414">
-                    <img src="./src/img/whatsapp.svg" width="48" height="48" alt="whatsApp">
-                </a>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="./src/img/instagram.svg" width="48" height="48" alt="instagram">
-                </a>
+                    <div class="flex gap-5 pl-4">
+                        <a href="https://wa.me/79147040414">
+                            <img src="./src/img/whatsapp.svg" width="48" height="48" alt="whatsApp">
+                        </a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            <img src="./src/img/instagram.svg" width="48" height="48" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+
+                <button class="btn-close-menu md:hidden absolute top-5 right-5">
+                    <svg viewBox="0 0 64 48">
+                        <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                        <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                        <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                    </svg>
+                </button>
             </div>
-        </div>
 
-        <button class="btn-close-menu md:hidden absolute top-5 right-5">
-            <svg viewBox="0 0 64 48">
-                <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
-                <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
-                <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
-            </svg>
-        </button>
-    </div>
+        </header>
 
-    </header>
+        <main>
+            <h1 class="visually-hidden">Территория натуральных продуктов</h1>
 
-    <main>
-        <h1 class="visually-hidden">Территория натуральных продуктов</h1>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__wrapper">
+                        <h2 class="hero__title">Территория натуральных продуктов</h2>
 
-    </main>
+                        <a class="hero__button" href="#">В каталог</a>
+                    </div>
+                </div>
+            </section>
 
-    <footer class="py-12 wow fadeInUp">
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="container">
-            <div class="flex items-center justify-between flex-col sm:flex-row">
-                <p class="mb-3">Алиса знает, что делать <span class="data-span"></span> г. Все права защищены</p>
-                <!-- <p class="mb-3">Политика конфиденциальности</p> -->
-                <a class="hover:text-blue transition-colors mb-3" href="http://inside360.ru" target="_blank">Сделано
-                    в INSIDE360</a>
+            <section class="category">
+                <h2 class="visually-hidden">Категории натуральных продуктов</h2>
+                <div class="container">
+                    <div class="w-0 min-w-[100%] relative">
+                        <div class="category-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide category-slide">
+                                    <li class="relative">
+                                        <p>Овощи</p>
+                                        <img src="./src/img/catalog/image-1.png" alt="">
+                                    </li>
+                                </div>
+                                <div class="swiper-slide category-slide">
+                                    <li class="relative">
+                                        <p>Тайские фрукты</p>
+                                        <img src="./src/img/catalog/image-2.png" alt="">
+                                    </li>
+                                </div>
+                                <div class="swiper-slide category-slide">
+                                    <li class="relative">
+                                        <p>Ягоды</p>
+                                        <img src="./src/img/catalog/image-3.png" alt="">
+                                    </li>
+                                </div>
+                                <div class="swiper-slide category-slide">
+                                    <li class="relative">
+                                        <p>Зелень</p>
+                                        <img src="./src/img/catalog/image-1.png" alt="">
+                                    </li>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev swiper-button-prev--category"></div>
+                        <div class="swiper-button-next swiper-button-next--category"></div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="py-12 wow fadeInUp">
+            <h2 class="visually-hidden">Контакты</h2>
+            <div class="container">
+                <div class="flex items-center justify-between flex-col sm:flex-row">
+                    <p class="mb-3">Алиса знает, что делать <span class="data-span"></span> г. Все права защищены</p>
+                    <!-- <p class="mb-3">Политика конфиденциальности</p> -->
+                    <a class="hover:text-blue transition-colors mb-3" href="http://inside360.ru" target="_blank">Сделано
+                        в INSIDE360</a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </div>
     <div class="scroll-top">
         <img src="./src/img/up-arrow.svg" alt="стрелка вверх">
