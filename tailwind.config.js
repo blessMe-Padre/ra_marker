@@ -19,11 +19,12 @@ module.exports = {
       'black': '#292e35',
       'gray': '#abb2be',
       'green': '#1a9640',
-      'light-green': '#e8f1eb',
+      'light-green': 'rgba(26, 150, 64)',
       'light-gray': '#f5f6f8',
       'red': '#e11212',
       'yellow': '#ffdb5a',
       'dark-gray': '#adb3c2',
+
 
       // ---------------------------------
       'main-black': '#262626',
