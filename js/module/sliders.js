@@ -74,18 +74,22 @@ export const initSlider = () => {
             loop: true,
             spaceBetween: 30,
             breakpoints: {
-                374: {
+                320: {
                     slidesPerView: 1,
+                },
+                374: {
+                    slidesPerView: 2,
                     spaceBetween: 20,
                 },
                 767: {
-                    slidesPerView: 2,
+                    slidesPerView: 3,
                 },
                 1023: {
                     slidesPerView: 4,
                     spaceBetween: 30,
                 },
             },
+
 
             navigation: {
                 nextEl: '.swiper-button-next--favorite',

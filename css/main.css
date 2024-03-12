@@ -356,7 +356,8 @@
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  margin-inline-start:var(--swiper-centered-offset-before)
+  -webkit-margin-start:var(--swiper-centered-offset-before);
+          margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -366,7 +367,8 @@
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  margin-block-start:var(--swiper-centered-offset-before)
+  -webkit-margin-before:var(--swiper-centered-offset-before);
+          margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -1403,7 +1405,7 @@ button.swiper-pagination-bullet{
   font-weight: 600;
   font-size: clamp(1.5rem, 1.214rem + 1.429vw, 2.5rem);
   color: #292e35;
-  margin-bottom: 50px;
+  margin-bottom: clamp(1.25rem, 1.03rem + 0.939vw, 1.875rem);
 }
 
 .card {
@@ -1493,7 +1495,7 @@ button.swiper-pagination-bullet{
 .about__text {
   font-family: "Futura PT", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: clamp(0.875rem, 0.655rem + 0.939vw, 1.5rem);
   color: #292e35;
   max-width: 761px;
   margin-bottom: 30px;
@@ -1503,12 +1505,6 @@ button.swiper-pagination-bullet{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-}
-
-@media (max-width: 769px) {
-  .about__list {
-    grid-template-columns: 1fr;
-  }
 }
 
 .about__item {
@@ -1526,12 +1522,30 @@ button.swiper-pagination-bullet{
   font-weight: 600;
   font-size: 18px;
   color: #292e35;
+  line-height: 1.2;
+}
+
+@media (max-width: 769px) {
+  .about__list {
+    grid-template-columns: 1fr;
+  }
+
+  .about__item {
+    padding: 20px;
+  }
 }
 
 .contact__map {
   background-image: url('../src/img/bg/map.webp');
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 600px;
+}
+
+@media (max-width: 767px) {
+  .contact__map {
+    min-height: 260px;
+  }
 }
 
 .breadcrumbs {
@@ -1755,7 +1769,7 @@ button.swiper-pagination-bullet{
 
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1787,11 +1801,9 @@ button.swiper-pagination-bullet{
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
-7. Disable tap highlights on iOS
 */
 
-html,
-:host {
+html {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -1801,14 +1813,12 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
-  -webkit-tap-highlight-color: transparent;
-  /* 7 */
 }
 
 /*
@@ -1880,10 +1890,8 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font-family by default.
-2. Use the user's configured `mono` font-feature-settings by default.
-3. Use the user's configured `mono` font-variation-settings by default.
-4. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -1892,12 +1900,8 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-feature-settings: normal;
-  /* 2 */
-  font-variation-settings: normal;
-  /* 3 */
   font-size: 1em;
-  /* 4 */
+  /* 2 */
 }
 
 /*
@@ -2346,10 +2350,13 @@ body {
   max-width: 1515px;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
-
 
 .left-0 {
   left: 0px;
@@ -2375,7 +2382,6 @@ body {
   z-index: -10;
 }
 
-
 .z-10 {
   z-index: 10;
 }
@@ -2390,6 +2396,10 @@ body {
 
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-5 {
@@ -2456,6 +2466,10 @@ body {
   flex-wrap: wrap;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -2476,6 +2490,10 @@ body {
   justify-items: stretch;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -2484,32 +2502,33 @@ body {
   gap: 0.75rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
 }
 
 .gap-8 {
   gap: 2rem;
 }
 
-
 .overflow-hidden {
   overflow: hidden;
-}
-
-.text-wrap {
-  text-wrap: wrap;
 }
 
 .rounded-2xl {
   border-radius: 1rem;
 }
 
-
 .rounded-3xl {
   border-radius: 1.5rem;
 }
-
 
 .rounded-full {
   border-radius: 9999px;
@@ -2550,16 +2569,16 @@ body {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-
 }
 
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-12 {
@@ -2576,7 +2595,6 @@ body {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-
 
 .py-3 {
   padding-top: 0.75rem;
@@ -2652,7 +2670,6 @@ body {
   --tw-text-opacity: 1;
   color: rgba(26, 150, 64, var(--tw-text-opacity));
 }
-
 
 .text-main-black {
   --tw-text-opacity: 1;
@@ -2739,9 +2756,16 @@ body {
 }
 
 @media (min-width: 768px) {
+  .sm\:flex {
+    display: flex;
+  }
 
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
   }
 
   .sm\:text-3xl {
@@ -2762,10 +2786,6 @@ body {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-
-  .sm\:flex {
-    display: flex;
-
   }
 }
 
@@ -2774,9 +2794,12 @@ body {
     display: flex;
   }
 
-  .md\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:w-3\/6 {
@@ -2785,6 +2808,11 @@ body {
 
   .md\:w-4\/12 {
     width: 33.333333%;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:pt-2 {

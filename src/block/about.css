@@ -19,7 +19,7 @@
 .about__text {
     font-family: "Futura PT", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(0.875rem, 0.655rem + 0.939vw, 1.5rem);
     color: #292e35;
     max-width: 761px;
     margin-bottom: 30px;
@@ -29,12 +29,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-}
-
-@media (max-width: 769px) {
-    .about__list {
-        grid-template-columns: 1fr; 
-    }
 }
 
 .about__item {
@@ -53,4 +47,16 @@
     font-weight: 600;
     font-size: 18px;
     color: #292e35;
+    line-height: 1.2;
+}
+
+@media (max-width: 769px) {
+    .about__list {
+        grid-template-columns: 1fr;
+    }
+
+    .about__item {
+        padding: 20px;
+    }
+
 }
