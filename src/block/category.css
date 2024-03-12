@@ -1,7 +1,9 @@
+.category {
+    padding: 20px 0;
+}
+
 .category-slide>div {
     padding: 30px 20px;
-    min-width: 240px;
-
     border-radius: 10px;
     background: #fff4cf;
 }
@@ -74,4 +76,41 @@
     font-weight: 400;
     font-size: 16px;
     color: #baae83;
+}
+
+.category-item {
+    padding: 30px 20px;
+    min-width: 240px;
+
+    border-radius: 10px;
+    background: #fff4cf;
+}
+
+.category-item img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+}
+
+.category-item p {
+    font-family: "Futura PT", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    color: #292e35;
+}
+
+@media (max-width: 800px) {
+    .category-item {
+        padding: 20px 20px;
+        min-width: 200px;
+        width: 48%;
+    }
+}
+
+@media (max-width: 539px) {
+    .category-item {
+        width: 100%;
+    }
 }

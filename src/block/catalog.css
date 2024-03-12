@@ -1,0 +1,73 @@
+.catalog-title {
+    font-family: "Futura PT", sans-serif;
+    font-weight: 600;
+    font-size: clamp(2rem, 1.857rem + 0.714vw, 2.5rem);
+    color: #292e35;
+    margin-bottom: 30px;
+}
+
+.catalog {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 290px 1fr;
+}
+
+.catalog {
+    color: aliceblue;
+}
+
+.catalog a {
+    color: aliceblue;
+}
+
+.accordion-arrow {
+    position: relative;
+    display: block;
+}
+
+.accordion-arrow::before {
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 10px;
+    top: 8px;
+    right: 10px;
+    background-image: url(//compass25.ru/wp-content/themes/compass-theme/src/img/arrow-up.svg);
+    /* background-image: url('../src/img/arrow-up-1.svg'); */
+    background-repeat: no-repeat;
+    transition: all .3s ease;
+}
+
+.accordion-arrow.is-active::before {
+    transform: rotate(180deg);
+}
+
+.side-menu ul li {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.side-menu li ul {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    transform: none;
+    transform-origin: unset;
+    position: static;
+    padding-left: 20px;
+}
+
+.side-menu li ul.is-active {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+.catalog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}

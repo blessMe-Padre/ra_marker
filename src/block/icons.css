@@ -13,3 +13,14 @@
 .icons--green {
     background-color: var(--green);
 }
+
+@media (max-width: 767px) {
+    .icons {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icons a {
+        font-size: 14px;
+    }
+}
