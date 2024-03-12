@@ -117,7 +117,17 @@
   color: #fff;
   border-radius: 25px;
   padding: 10px 30px;
-  background: #1a9640;
+  background-color: #1a9640;
+  transition: all 0.3s ease-in;
+}
+
+.card__to-card {
+  transition: all 0.3s ease-in;
+}
+
+.ra-button:hover,
+.card__to-card:hover {
+  background-color: #64ad7a;
 }
 
 .btn-close-menu {
