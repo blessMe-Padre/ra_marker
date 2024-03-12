@@ -1,7 +1,9 @@
+.category {
+    padding: 20px 0;
+}
+
 .category-slide>div {
     padding: 30px 20px;
-    min-width: 240px;
-
     border-radius: 10px;
     background: #fff4cf;
 }
