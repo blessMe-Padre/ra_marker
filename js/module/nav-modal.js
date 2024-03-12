@@ -20,13 +20,21 @@ export const initNavModal = () => {
         });
     }
 
-    const catalogButton = document.querySelector('.catalog-button');
+    const catalogButton = document.querySelector('.catalog-button-catalog');
+    const catalogButtonMobile = document.querySelector('.catalog-button-menu');
+
     const catalogMenu = document.querySelector('.catalog-menu');
+    const catalogMenuMobile = document.querySelector('.catalog-menu-mobile');
 
     if (catalogButton) {
         catalogButton.addEventListener('click', () => {
             catalogMenu.classList.toggle('is-active');
             catalogButton.classList.toggle('is-active');
+        });
+
+        catalogButtonMobile.addEventListener('click', () => {
+            catalogMenuMobile.classList.toggle('is-active');
+            catalogButtonMobile.classList.toggle('is-active');
         });
     }
 }
