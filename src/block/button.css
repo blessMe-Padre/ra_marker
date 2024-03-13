@@ -33,3 +33,36 @@
 .card__to-card:hover {
     background-color: #64ad7a;
 }
+
+.filter-button {
+    display: none;
+    border-radius: 100px;
+    padding: 10px 20px 10px 50px;
+    background: #f5f6f8;
+    color: #292e35;
+
+    font-family: "Futura PT", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+
+    background-image: url('../src/img/icons/icon-filter.svg');
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+
+    transition: all 0.3s ease;
+}
+
+.filter-button.is-active {
+    color: #f5f6f8;
+    background: #64ad7a;
+    background-image: url('../src/img/icons/catalog-x.svg');
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+}
+
+@media (max-width: 768px) {
+    .filter-button {
+        display: block;
+    }
+}

@@ -37,4 +37,14 @@ export const initNavModal = () => {
             catalogButtonMobile.classList.toggle('is-active');
         });
     }
+
+    const filterButton = document.querySelector('.filter-button');
+    const sideMenu = document.querySelector('.side-menu');
+
+    if (filterButton) {
+        filterButton.addEventListener('click', () => {
+            filterButton.classList.toggle('is-active');
+            sideMenu.classList.toggle('is-active');
+        });
+    }
 }

@@ -130,6 +130,36 @@
   background-color: #64ad7a;
 }
 
+.filter-button {
+  display: none;
+  border-radius: 100px;
+  padding: 10px 20px 10px 50px;
+  background: #f5f6f8;
+  color: #292e35;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  background-image: url('../src/img/icons/icon-filter.svg');
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+  transition: all 0.3s ease;
+}
+
+.filter-button.is-active {
+  color: #f5f6f8;
+  background: #64ad7a;
+  background-image: url('../src/img/icons/catalog-x.svg');
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
+
+@media (max-width: 768px) {
+  .filter-button {
+    display: block;
+  }
+}
+
 .btn-close-menu {
   --color:  #262626;
   width: 36px;
@@ -1607,11 +1637,10 @@ button.swiper-pagination-bullet{
   display: grid;
   gap: 20px;
   grid-template-columns: 290px 1fr;
-  color: aliceblue;
 }
 
 .catalog a {
-  color: aliceblue;
+  font-size: 18px;
 }
 
 .accordion-arrow {
@@ -1639,6 +1668,12 @@ button.swiper-pagination-bullet{
 .side-menu ul li {
   position: relative;
   margin-bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.side-menu li {
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
 }
 
 .side-menu li ul {
@@ -1664,6 +1699,49 @@ button.swiper-pagination-bullet{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .catalog {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .catalog__list-item {
+    padding: 20px 10px;
+  }
+
+  .side-menu {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    min-height: 40vh;
+    padding: 20px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .side-menu.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 375px) {
+  .catalog__list {
+    gap: 10px;
+  }
 }
 
 /* input checkbox */
