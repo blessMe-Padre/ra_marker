@@ -77,10 +77,6 @@
 /* Директивы классов */
 
 
-.popup-link {
-    @apply block py-3 text-2xl font-bodyFont uppercase px-8 bg-green rounded-lg text-center border-solid border-green border-[2px] transition-all relative z-[1] hover:bg-transparent;
-}
-
 /* Прочие классы */
 
 .lock {
