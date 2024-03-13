@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,174 +15,6 @@
 
 <body>
     <div class="h-screen grid grid-rows-[auto_1fr_auto]">
-        <!-- <header class="z-10 w-full md-28 transition-colors header">
-            <div class="container gap-5 items-center justify-between hidden md:flex md:pt-2">
-                <img loading="lazy" src="./src/img/logo.svg" width="195" height="55" alt="лого">
-                <ul class="flex gap-2 flex-wrap text-main-black">
-                    <li class="mr-4"><a class="link" href="#" data-goto=".page-section-1">О магазине</a></li>
-                    <li class="mr-4"><a class="link" href="#" data-goto=".page-section-2">Доставка и оплата</a></li>
-                    <li class="mr-4"><a class="link" href="#" data-goto=".page-section-3">Отзывы</a></li>
-                    <li class="mr-4"><a class="link" href="#" data-goto=".page-section-4">Контакты</a></li>
-                </ul>
-
-                <div class="flex gap-7">
-                    <div class="header__item">
-                        <div class="icons">
-                            <img src="./src/img/icons/icon-pin.svg" width="20" height="20" alt="pin">
-                        </div>
-                        <div>
-                            <p>г. Владивосток, </p>
-                            <p>ул. ​Проспект Острякова, д. 13</p>
-                        </div>
-                    </div>
-
-                    <div class="header__item">
-                        <div class="icons">
-                            <img src="./src/img/icons/icon-phone.svg" width="20" height="20" alt="pin">
-                        </div>
-                        <a class="link" href="tel:+79084405742">+ 7 (908) 440-57-42</a>
-                    </div>
-
-                    <div class="header__item">
-                        <div class="icons icons--green">
-                            <a href="tel:+79084405742">
-                                <img src="./src/img/icons/icon-phone.svg" width="20" height="20" alt="pin">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="header__inner container">
-                <button class="catalog-button">
-                    <img class="catalog-button-img-1" src="./src/img/icons/catalog-button.svg" width="20" height="20"
-                        alt="">
-                    <img class="catalog-button-img-2" src="./src/img/icons/catalog-x.svg" width="20" height="20" alt="">
-                    <span>Каталог</span>
-                </button>
-
-                <ul class="catalog-menu">
-                    <li class="relative">
-                        <p>Овощи</p>
-                        <img src="./src/img/catalog/image-1.png" alt="">
-                    </li>
-                    <li class="relative">
-                        <p>Тайские фрукты</p>
-                        <img src="./src/img/catalog/image-2.png" alt="">
-                    </li>
-                    <li class="relative">
-                        <p>️Ягода</p>
-                        <img src="./src/img/catalog/image-3.png" alt="">
-                    </li>
-                    <li class="relative">
-                        <p>Овощи</p>
-                        <img src="./src/img/catalog/image-1.png" alt="">
-                    </li>
-                    <li class="relative">
-                        <p>Тайские фрукты</p>
-                        <img src="./src/img/catalog/image-2.png" alt="">
-                    </li>
-                    <li class="relative">
-                        <p>️Ягода</p>
-                        <img src="./src/img/catalog/image-3.png" alt="">
-                    </li>
-                    <li class="relative">
-                        <p>Овощи</p>
-                        <img src="./src/img/catalog/image-1.png" alt="">
-                    </li>
-                    <li class="relative">
-                        <p>Тайские фрукты</p>
-                        <img src="./src/img/catalog/image-2.png" alt="">
-                    </li>
-                    <li class="relative">
-                        <p>️Ягода</p>
-                        <img src="./src/img/catalog/image-3.png" alt="">
-                    </li>
-                    <li class="relative">
-                        <p>Овощи</p>
-                        <img src="./src/img/catalog/image-1.png" alt="">
-                    </li>
-                    <li class="relative">
-                        <p>Тайские фрукты</p>
-                        <img src="./src/img/catalog/image-2.png" alt="">
-                    </li>
-                    <li class="relative">
-                        <p>️Ягода</p>
-                        <img src="./src/img/catalog/image-3.png" alt="">
-                    </li>
-                </ul>
-
-                <form class="header__search" role="search" method="get" id="searchform" action="#">
-                    <label class="screen-reader-text" hidden for="s">Поиск: </label>
-
-                    <input type="text" value="" name="s" id="s" placeholder="поиск по товарам" />
-
-                    <button type="submit" id="searchsubmit" value="найти">
-                        <img src="./src/img/icons/icon-search.svg" width="21" height="21" alt=""></button>
-                </form>
-
-                <div class="relative">
-                    <div class="header__lk-button">
-                        <img src="./src/img/icons/icon-cart.svg" width="20" height="20" alt="cart">
-                        <span>0&nbsp;шт&nbsp;(0&nbsp; ₽)</span>
-                    </div>
-
-                    <div class="header__modal-wrapper">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quia!
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <div class="header__lk-button">
-                        <img src="./src/img/icons/icon-person.svg" width="20" height="20" alt="icon-person">
-                        <span>Вход/регистрация</span>
-                    </div>
-                    <div class="header__modal-wrapper">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quia!
-                    </div>
-                </div>
-
-                <a href="#" class="header__lk-button">
-                    <img src="./src/img/icons/icon-heart.svg" width="20" height="20" alt="icon-heart">
-                    <span>Любимые&nbsp;товары</span>
-                </a>
-            </div>
-
-            <div class="flex flex-col items-start justify-between pt-20 overflow-hidden md:hidden">
-                <img loading="lazy" class="absolute top-5 left-5" src="./src/img/logo.svg" width="195" height="55"
-                    alt="лого">
-                <div class="mobile-menu bg-green">
-                    <ul class="flex flex-col pb-11 text-main-black pt-4">
-                        <li class="px-4 mb-4"><a class="link" href="#" data-goto=".page-section-1">О магазине</a>
-                        </li>
-                        <li class="px-4 mb-4"><a class="link" href="#" data-goto=".page-section-2">Доставка и
-                                оплата</a>
-                        </li>
-                        <li class="px-4 mb-4"><a class="link" href="#" data-goto=".page-section-3">Отзывы</a>
-                        </li>
-                        <li class="px-4 mb-4"><a class="link" href="#" data-goto=".page-section-4">Контакты</a></li>
-                    </ul>
-
-                    <div class="flex gap-5 pl-4">
-                        <a href="https://wa.me/79147040414">
-                            <img src="./src/img/whatsapp.svg" width="48" height="48" alt="whatsApp">
-                        </a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            <img src="./src/img/instagram.svg" width="48" height="48" alt="instagram">
-                        </a>
-                    </div>
-                </div>
-
-                <button class="btn-close-menu md:hidden absolute top-5 right-5">
-                    <svg viewBox="0 0 64 48">
-                        <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
-                        <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
-                        <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
-                    </svg>
-                </button>
-            </div>
-
-        </header> -->
 
         <main>
             <h1 class="visually-hidden">Территория натуральных продуктов</h1>
@@ -189,7 +22,8 @@
             <section class="about">
                 <div class="container">
                     <h2 class="about__title md:text-7xl sm:text-4xl">RA market —</h2>
-                    <p class="about__text md:text-2xl sm:text-xl font-normal">компания с заботой о каждом клиенте вот уже 20 лет. Мы умеем не только
+                    <p class="about__text md:text-2xl sm:text-xl font-normal">компания с заботой о каждом клиенте вот
+                        уже 20 лет. Мы умеем не только
                         слушать, но и слышать вас.
                         Это позволяет нам развиваться и улучшатся
                         для вас. Мы делаем акцент на качестве наших продуктов. Каждый заказ наши сотрудники собирают
@@ -216,29 +50,43 @@
 
             <section class="about__company pt-10 relative z-10">
                 <img class="absolute top-0 left-0 w-5/12 -z-10" src="./src/img/about__shop/pattern.png" alt="">
-                <div class="container"> 
+                <div class="container">
                     <h3 class="font-medium pb-5 md:text-4xl sm:text-3xl text-black">О нас</h3>
                     <div class="flex flex-wrap justify-between">
                         <div class="flex flex-col gap-8 sm:w-full md:w-3/6">
                             <p class="md:text-2xl sm:text-lg font-normal text-black text-wrap">
-                                RA market — это рай для всех гурманов и ценителей натуральности. Наша компания была основана с целью предоставления высококачественных и экологически чистых продуктов питания для тех, кто заботится о своем здоровье и благополучии. В нашем магазине мы предлагаем широкий ассортимент товаров, начиная от свежих фруктов и овощей, заканчивая органическими крупами, специями и натуральными суперфудами.
+                                RA market — это рай для всех гурманов и ценителей натуральности. Наша компания была
+                                основана с целью предоставления высококачественных и экологически чистых продуктов
+                                питания для тех, кто заботится о своем здоровье и благополучии. В нашем магазине мы
+                                предлагаем широкий ассортимент товаров, начиная от свежих фруктов и овощей, заканчивая
+                                органическими крупами, специями и натуральными суперфудами.
                             </p>
-                        
+
                             <p class="md:text-2xl sm:text-lg font-normal text-black text-wrap">
-                                Мы стремимся предоставлять продукты самого высокого качества, которые не содержат ГМО, пестицидов, искусственных красителей и ароматизаторов. Все наши товары проходят строгий контроль качества и соответствуют всем международным стандартам. Мы также следим за последними тенденциями в области здорового питания и постоянно обновляем наш ассортимент новинками, которые помогут вам поддерживать свое здоровье и благополучие на высоком уровне.
+                                Мы стремимся предоставлять продукты самого высокого качества, которые не содержат ГМО,
+                                пестицидов, искусственных красителей и ароматизаторов. Все наши товары проходят строгий
+                                контроль качества и соответствуют всем международным стандартам. Мы также следим за
+                                последними тенденциями в области здорового питания и постоянно обновляем наш ассортимент
+                                новинками, которые помогут вам поддерживать свое здоровье и благополучие на высоком
+                                уровне.
                             </p>
-                        
+
                             <p class="md:text-2xl sm:text-lg font-normal text-black text-wrap">
-                                Компания RA market гордится своей командой профессионалов, которая всегда готова помочь вам с выбором продуктов, предоставить информацию о составе и особенностях каждого товара, а также дать советы по здоровому питанию. Мы стремимся сделать процесс покупки максимально удобным и приятным для наших клиентов.
+                                Компания RA market гордится своей командой профессионалов, которая всегда готова помочь
+                                вам с выбором продуктов, предоставить информацию о составе и особенностях каждого
+                                товара, а также дать советы по здоровому питанию. Мы стремимся сделать процесс покупки
+                                максимально удобным и приятным для наших клиентов.
                             </p>
-                        
+
                             <p class="md:text-2xl sm:text-lg font-normal text-black text-wrap">
-                                Нашей главной миссией является обеспечение доступа к натуральным и здоровым продуктам питания для всех людей, независимо от их возраста, образа жизни и финансовых возможностей.
+                                Нашей главной миссией является обеспечение доступа к натуральным и здоровым продуктам
+                                питания для всех людей, независимо от их возраста, образа жизни и финансовых
+                                возможностей.
                             </p>
                         </div>
 
                         <div class="w-full md:w-4/12">
-                            <img src="./src/img/about__shop/shop.png" alt="Фото магазина" >
+                            <img src="./src/img/about__shop/shop.png" alt="Фото магазина">
                         </div>
 
                     </div>
@@ -251,35 +99,43 @@
                                 <div class="swiper-slide about__shop-slide">
                                     <div class="relative">
                                         <a href="./src/img/about__shop/about_shop_2.png">
-                                            <img class="rounded-2xl object-cover" src="./src/img/about__shop/about_shop_2.png" alt="фото-2" data-caption="Image caption">
+                                            <img class="rounded-2xl object-cover"
+                                                src="./src/img/about__shop/about_shop_2.png" alt="фото-2"
+                                                data-caption="Image caption">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide about__shop-slide">
                                     <div class="relative">
                                         <a href="./src/img/about__shop/about_shop_3.png">
-                                            <img class="rounded-2xl object-cover" src="./src/img/about__shop/about_shop_3.png" alt="фото-3" data-caption="Image caption" >
+                                            <img class="rounded-2xl object-cover"
+                                                src="./src/img/about__shop/about_shop_3.png" alt="фото-3"
+                                                data-caption="Image caption">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide about__shop-slide">
                                     <div class="relative">
                                         <a href="./src/img/about__shop/about_shop_1.png">
-                                            <img class="rounded-2xl object-cover" src="./src/img/about__shop/about_shop_1.png" alt="фото-1" data-caption="Image caption" >
+                                            <img class="rounded-2xl object-cover"
+                                                src="./src/img/about__shop/about_shop_1.png" alt="фото-1"
+                                                data-caption="Image caption">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide about__shop-slide">
                                     <div class="relative">
                                         <a href="./src/img/about__shop/about_shop_4.png">
-                                            <img class="rounded-2xl object-cover" src="./src/img/about__shop/about_shop_4.png" alt="фото-4" data-caption="Image caption" >
+                                            <img class="rounded-2xl object-cover"
+                                                src="./src/img/about__shop/about_shop_4.png" alt="фото-4"
+                                                data-caption="Image caption">
                                         </a>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-                      
+
                         <div class="swiper-button-prev swiper-button-prev--about__shop"></div>
                         <div class="swiper-button-next swiper-button-next--about__shop"></div>
                     </div>
@@ -292,10 +148,10 @@
                     <div class="w-0 min-w-[100%] relative">
                         <div class="about__shop__reviews-swiper swiper">
                             <div class="swiper-wrapper">
-                              
+
                                 <div class="swiper-slide about__shop__reviews-slide">
                                     <div class="relative p-8 bg-light-gray rounded-xl">
-                                      
+
                                         <div class="flex justify-between items-center">
                                             <div class="flex justify-center gap-5 items-center">
                                                 <p class="rounded-full bg-white text-light-green py-5 px-7">E</p>
@@ -307,19 +163,24 @@
                                                 <img src="./src/img/about__shop/star.png" alt="star">
                                             </div>
                                         </div>
-                                       
+
                                         <div class="pt-3">
                                             <p class="text-black font-medium md:text-lg text-base">
-                                                Магазин хороший, всегда очень бойкая торговля. Интересные ЗОЖные товары, овощи, зелень всегда свежие, хоть и не дешёвые, но оно того стоит. Персонал очень вежливый и заботливый, всегда помогут и подскажут. В общем, я там постоянный клиент и всем рекомендую!
+                                                Магазин хороший, всегда очень бойкая торговля. Интересные ЗОЖные товары,
+                                                овощи, зелень всегда свежие, хоть и не дешёвые, но оно того стоит.
+                                                Персонал очень вежливый и заботливый, всегда помогут и подскажут. В
+                                                общем, я там постоянный клиент и всем рекомендую!
                                             </p>
                                         </div>
-                                        
+
                                         <div class="flex justify-start gap-3 py-3">
-                                            <img class="rounded-lg" src="./src/img/about__shop/about_review_1.png" alt="отзыв_1">
-                                            <img class="rounded-lg" src="./src/img/about__shop/about_review_2.png" alt="отзыв_2">
+                                            <img class="rounded-lg" src="./src/img/about__shop/about_review_1.png"
+                                                alt="отзыв_1">
+                                            <img class="rounded-lg" src="./src/img/about__shop/about_review_2.png"
+                                                alt="отзыв_2">
                                         </div>
 
-                                        
+
                                         <div class="py-2">
                                             <span class="text-gray text-sm font-normal">
                                                 26.02.2021
@@ -327,10 +188,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="swiper-slide about__shop__reviews-slide">
                                     <div class="relative p-8 bg-light-gray rounded-xl">
-                                        
+
                                         <div class="flex justify-between items-center">
                                             <div class="flex justify-center gap-5 items-center">
                                                 <p class="rounded-full bg-white text-light-green py-5 px-7">E</p>
@@ -342,19 +203,24 @@
                                                 <img src="./src/img/about__shop/star.png" alt="star">
                                             </div>
                                         </div>
-                                    
+
                                         <div class="pt-3">
                                             <p class="text-black font-medium md:text-lg text-base">
-                                                Магазин хороший, всегда очень бойкая торговля. Интересные ЗОЖные товары, овощи, зелень всегда свежие, хоть и не дешёвые, но оно того стоит. Персонал очень вежливый и заботливый, всегда помогут и подскажут. В общем, я там постоянный клиент и всем рекомендую!
+                                                Магазин хороший, всегда очень бойкая торговля. Интересные ЗОЖные товары,
+                                                овощи, зелень всегда свежие, хоть и не дешёвые, но оно того стоит.
+                                                Персонал очень вежливый и заботливый, всегда помогут и подскажут. В
+                                                общем, я там постоянный клиент и всем рекомендую!
                                             </p>
                                         </div>
-                                       
+
                                         <div class="flex justify-start gap-3 py-3">
-                                            <img class="rounded-lg" src="./src/img/about__shop/about_review_1.png" alt="отзыв_1">
-                                            <img class="rounded-lg" src="./src/img/about__shop/about_review_2.png" alt="отзыв_2">
+                                            <img class="rounded-lg" src="./src/img/about__shop/about_review_1.png"
+                                                alt="отзыв_1">
+                                            <img class="rounded-lg" src="./src/img/about__shop/about_review_2.png"
+                                                alt="отзыв_2">
                                         </div>
 
-                                       
+
                                         <div class="py-2">
                                             <span class="text-gray text-sm font-normal">
                                                 26.02.2021
@@ -362,10 +228,10 @@
                                         </div>
                                     </div>
                                 </div>
-                             
+
                                 <div class="swiper-slide about__shop__reviews-slide">
                                     <div class="relative p-8 bg-light-gray rounded-xl">
-                                     
+
                                         <div class="flex justify-between items-center">
                                             <div class="flex justify-center gap-5 items-center">
                                                 <p class="rounded-full bg-white text-light-green py-5 px-7">E</p>
@@ -377,16 +243,21 @@
                                                 <img src="./src/img/about__shop/star.png" alt="star">
                                             </div>
                                         </div>
-                                       
+
                                         <div class="pt-3">
                                             <p class="text-black font-medium md:text-lg text-base">
-                                                Магазин хороший, всегда очень бойкая торговля. Интересные ЗОЖные товары, овощи, зелень всегда свежие, хоть и не дешёвые, но оно того стоит. Персонал очень вежливый и заботливый, всегда помогут и подскажут. В общем, я там постоянный клиент и всем рекомендую!
+                                                Магазин хороший, всегда очень бойкая торговля. Интересные ЗОЖные товары,
+                                                овощи, зелень всегда свежие, хоть и не дешёвые, но оно того стоит.
+                                                Персонал очень вежливый и заботливый, всегда помогут и подскажут. В
+                                                общем, я там постоянный клиент и всем рекомендую!
                                             </p>
                                         </div>
-                                       
+
                                         <div class="flex justify-start gap-3 py-3">
-                                            <img class="rounded-lg" src="./src/img/about__shop/about_review_1.png" alt="отзыв_1">
-                                            <img class="rounded-lg" src="./src/img/about__shop/about_review_2.png" alt="отзыв_2">
+                                            <img class="rounded-lg" src="./src/img/about__shop/about_review_1.png"
+                                                alt="отзыв_1">
+                                            <img class="rounded-lg" src="./src/img/about__shop/about_review_2.png"
+                                                alt="отзыв_2">
                                         </div>
 
                                         <div class="py-2">
@@ -396,11 +267,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            
-                                
+
+
                             </div>
                         </div>
-                      
+
                         <div class="swiper-button-prev swiper-button-prev--about__shop__reviews"></div>
                         <div class="swiper-button-next swiper-button-next--about__shop__reviews"></div>
                     </div>
