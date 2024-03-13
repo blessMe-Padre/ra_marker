@@ -5,6 +5,7 @@ import { initScrollToTop } from "./module/scroll-to-top.js";
 import { initScroll } from "./module/scroll.js";
 import { initNavModal } from "./module/nav-modal.js";
 import { initAccordionMenu } from "./module/accordions.js";
+import { initPopup } from "./module/popup.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
     baguetteBox.run('.gallery-wrapper');
     initNavModal();
     initAccordionMenu();
+    initPopup();
 
     // DOMContentLoaded
 });

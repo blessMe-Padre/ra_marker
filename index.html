@@ -13,7 +13,7 @@
     <link rel=" stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="wrapper">
     <div class="h-screen grid grid-rows-[auto_1fr_auto]">
         <header class="z-10 w-full md-28 transition-colors header">
             <div class="container gap-5 items-center justify-between flex md:pt-2">
@@ -179,7 +179,7 @@
                         </div>
                     </div>
 
-                    <a href="#" class="header__lk-button header__lk-button--mobile">
+                    <a href="" class="header__lk-button header__lk-button--mobile">
                         <img src="./src/img/icons/icon-heart.svg" width="20" height="20" alt="icon-heart">
                         <span>Любимые&nbsp;товары</span>
                     </a>
@@ -485,6 +485,45 @@
             </section>
 
         </main>
+        <a class="popup-link" href="#popup">попап</a>
+        <section id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                            <path d="M4 1.45508L19.9099 17.365" stroke="#ffffff" />
+                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#ffffff" />
+                        </svg>
+                    </button>
+                    <h2 class="text-start text-main-black z-10 font-normal md:text-4xl text-xl uppercase pb-10 ">
+                        Закажите звонок</h2>
+                    <div>
+                        <p class="font-semibold text-lg max-w-xs">Оставьте контакты и менеджер свяжется с вами в
+                            ближайшее время</p>
+                    </div>
+                    <div class="form-wrapper">
+                        <form action="#" id="form" class="form validate-form flex-col">
+                            <div class="form__item">
+                                <label for="formName">Введите имя</label>
+                                <input id="formName" type="text" name="name">
+                            </div>
+
+                            <div class="form__item">
+                                <label for="formName">Введите номер</label>
+                                <input id="formPhone" type="tel" name="phone">
+                            </div>
+
+
+                            <button type="submit">Заказать звонок</button>
+                        </form>
+                    </div>
+                    <p class="form-section__descriptions w-full">Нажимая кнопку “отправить заявку” вы даёте
+                        согласие на <a class="underline" href="#" target="_blank" rel="noopener noreferrer">обработку
+                            персональных
+                            данных</a></p>
+                </div>
+            </div>
+        </section>
 
         <footer class="footer py-12">
             <h2 class="visually-hidden">Контакты</h2>
