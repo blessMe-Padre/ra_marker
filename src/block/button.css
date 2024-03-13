@@ -66,3 +66,20 @@
         display: block;
     }
 }
+
+
+.lk-order-item-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    border-radius: 25px;
+    padding: 10px 30px;
+    height: 45px;
+    background: #1a9640;
+
+    font-family: "Futura PT", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}

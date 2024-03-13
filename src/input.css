@@ -23,6 +23,7 @@
 @import './block/catalog.css';
 @import './block/wpfilters.css';
 @import './block/popup.css';
+@import './block/lk.css';
 @import './block/footer.css';
 
 
@@ -95,4 +96,13 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+/* tabs start */
+._tabs-block {
+    display: none;
+}
+
+._tabs-block._active {
+    display: block;
 }

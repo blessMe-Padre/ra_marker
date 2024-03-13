@@ -6,6 +6,7 @@ import { initScroll } from "./module/scroll.js";
 import { initNavModal } from "./module/nav-modal.js";
 import { initAccordionMenu } from "./module/accordions.js";
 import { initPopup } from "./module/popup.js";
+import { initTab } from "./module/tab.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initNavModal();
     initAccordionMenu();
     initPopup();
+    initTab();
 
     // DOMContentLoaded
 });

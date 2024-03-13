@@ -160,6 +160,20 @@
   }
 }
 
+.lk-order-item-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 25px;
+  padding: 10px 30px;
+  height: 45px;
+  background: #1a9640;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+
 .btn-close-menu {
   --color:  #262626;
   width: 36px;
@@ -1913,6 +1927,78 @@ button.swiper-pagination-bullet{
   width: 100%;
 }
 
+.lk {
+}
+
+.lk-nav {
+  margin-bottom: 30px;
+}
+
+.lk-button {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #292e35;
+}
+
+.lk-button._active {
+  font-weight: 500;
+  color: #1a9640;
+  border-bottom: 2px solid #1a9640;
+}
+
+.profile-list {
+  border-radius: 20px;
+  padding: 35px 39px;
+  background: #f5f6f8;
+}
+
+.form-lk__item {
+  margin-top: 30px;
+}
+
+.form-lk__item label {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #adb3c2;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-lk__item input {
+  border-radius: 100px;
+  padding: 0px 24px;
+  height: 45px;
+  background: #fff;
+  display: flex;
+  max-width: 632px;
+  width: 100%;
+}
+
+.lk-order-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.lk-order-item {
+  border-radius: 20px;
+  padding: 35px 39px;
+  background: #f5f6f8;
+}
+
+@media (max-width: 767px) {
+  .lk-order-list {
+    grid-template-columns: 1fr;
+  }
+
+  .lk-button {
+    font-size: 14px;
+  }
+}
+
 .footer {
   background: #f5f6f8;
 }
@@ -2619,6 +2705,10 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mr-4 {
   margin-right: 1rem;
 }
@@ -2863,6 +2953,11 @@ body {
   text-align: start;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -2881,6 +2976,10 @@ body {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-medium {
@@ -2902,6 +3001,11 @@ body {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(41 46 53 / var(--tw-text-opacity));
+}
+
+.text-dark-gray {
+  --tw-text-opacity: 1;
+  color: rgb(173 179 194 / var(--tw-text-opacity));
 }
 
 .text-gray {
@@ -3000,6 +3104,16 @@ body {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* tabs start */
+
+._tabs-block {
+  display: none;
+}
+
+._tabs-block._active {
+  display: block;
 }
 
 @media (min-width: 768px) {
