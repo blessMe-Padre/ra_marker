@@ -7,6 +7,7 @@ import { initNavModal } from "./module/nav-modal.js";
 import { initAccordionMenu } from "./module/accordions.js";
 import { initPopup } from "./module/popup.js";
 import { initTab } from "./module/tab.js";
+import { initDistance } from "./module/distance.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordionMenu();
     initPopup();
     initTab();
+    initDistance();
 
     // DOMContentLoaded
 });

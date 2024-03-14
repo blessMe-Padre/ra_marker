@@ -80,13 +80,20 @@
 .header__modal-wrapper {
     position: absolute;
     top: 40px;
-    left: 0;
+    right: 0;
     background-color: var(--yellow);
 
     opacity: 0;
     visibility: hidden;
 
     transition: opacity 0.3s ease;
+
+    border-radius: 20px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
+    padding: 20px;
+
+    min-width: 200px;
 }
 
 .header__modal-wrapper.is-active {
@@ -249,5 +256,9 @@
 @media (max-width: 550px) {
     .header__lk-button {
         padding: 5px;
+    }
+
+    .header__modal-wrapper {
+        min-width: 55vw;
     }
 }

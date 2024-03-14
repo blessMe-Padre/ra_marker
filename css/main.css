@@ -1137,11 +1137,16 @@ button.swiper-pagination-bullet{
 .header__modal-wrapper {
   position: absolute;
   top: 40px;
-  left: 0;
+  right: 0;
   background-color: var(--yellow);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
+  border-radius: 20px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  background: #fff;
+  padding: 20px;
+  min-width: 200px;
 }
 
 .header__modal-wrapper.is-active {
@@ -1296,6 +1301,10 @@ button.swiper-pagination-bullet{
 @media (max-width: 550px) {
   .header__lk-button {
     padding: 5px;
+  }
+
+  .header__modal-wrapper {
+    min-width: 55vw;
   }
 }
 
@@ -2829,10 +2838,6 @@ body {
   z-index: 10;
 }
 
-.mb-0 {
-  margin-bottom: 0px;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -2853,16 +2858,16 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
 
 .mr-4 {
   margin-right: 1rem;
-}
-
-.mb-7 {
-  margin-bottom: 1.75rem;
 }
 
 .block {
@@ -2919,10 +2924,6 @@ body {
 
 .max-w-xs {
   max-width: 20rem;
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-rows-\[auto_1fr_auto\] {
@@ -3252,10 +3253,6 @@ body {
 }
 
 @media (min-width: 560px) {
-  .sx\:mb-7 {
-    margin-bottom: 1.75rem;
-  }
-
   .sx\:mb-0 {
     margin-bottom: 0px;
   }
@@ -3276,10 +3273,6 @@ body {
 
   .sm\:w-full {
     width: 100%;
-  }
-
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:grid-cols-2 {
