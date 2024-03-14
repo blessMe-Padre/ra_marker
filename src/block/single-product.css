@@ -1,4 +1,6 @@
-.single-product {}
+.single-product {
+    padding-bottom: 40px;
+}
 
 .single-product__wrapper {
     display: grid;
@@ -47,5 +49,10 @@
     .single-product__wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
+}
 
+@media (max-width: 767px) {
+    .single-product__wrapper {
+        grid-template-columns: 1fr;
+    }
 }
